@@ -1,21 +1,46 @@
+:root {
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
 * {
     box-sizing: border-box;
+    
   }
 
   .bg-primary {
     background: rgb(253, 95, 0)
   }
 
-
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
-
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+h2{
+    font-style: 44px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .switcher-bar {
     background-color: #333333;
     height: 3.6rem;
     padding: 0;
   }
+
+  .wrap-about .img {
+    width: 100%;
+}
+.img, .blog-img, .user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
 
   .switcher-bar .fox-plus a:link {
     font-size: 16px;
@@ -85,9 +110,9 @@
 
 .navbar-brand {
     font-weight: 900;
-    font-size: 25px;
+    font-size: 38px;
     padding: 0;
-    line-height: 1;
+    line-height: .2;
     text-transform: uppercase;
 }
 
@@ -101,7 +126,6 @@ nav .search-continer{
 nav form input{
     background-color: #333;
     width:100%;
-    
     border-radius: 2.8rem;
     
 
@@ -120,8 +144,8 @@ nav form button.btn{
     width: 50px;
 }
 .di{
-    height: 37px;
-    width: 28%;
+    height: 41px;
+    width: 25%;
     background-color: #eeedee;
     font-size: 20px;
     text-align: center;
@@ -163,6 +187,7 @@ form.example button {
     background-color: #fd5f00 !important;
     color: #ffff;
     border-color: #fd5f00;
+    
 
 }
 
@@ -208,17 +233,6 @@ a:hover {
 /* =============request----------- */
 
 
-input{
-    width: 300px;
-    padding: 10px 20px;
-    border-color: transparent;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    font-size: 15px;
-    float: right;
-    background: transparent;
-  }
-  
-
 .crouse span {
     margin-right: auto;
 
@@ -242,7 +256,7 @@ input{
 }
 
 .dipa{
-    height: 450px;
+    height: 390px;
     width: 50%;
     background-color: rgb(255, 255, 255);
     font-size: 20px;
@@ -254,15 +268,22 @@ input{
 }
 .dipa img{
 
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 10.5%;
    
 }
 
+.meta-date {
+    display: flex;
+    flex-direction: column;
+    background-color: #5b4eba;
+    color: #ebe4ef;
+    
 
+}
 .meta a{
     color: #f7f3f3;
 }
@@ -322,21 +343,31 @@ input{
 .bxl-facebook{
     border-radius: 50%;
 }
-.appointment-form .form-control {
+.appointment-form .form-control.fo {
     border: transparent !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
     height: 58px !important;
     padding-left: 0;
     padding-right: 0;
     background: transparent !important;
-    color: rgba(156, 153, 153, 0.9) !important;
+    color: rgba(255, 253, 253, 0.9) !important;
     font-size: 16px;
     border-radius: 0px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    ;
+    ;}
+    .form-contro{
+        height: 58px !important;   
+        padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
     
-}
+    }
+
 ::-webkit-input-placeholder{
     color: rgb(255, 255, 255);
 }
@@ -350,22 +381,32 @@ input{
 .footer  ul li a span {
     color: #fff;
 }
-.footer .social li a span {
-    background-color: #323434;
 
+.footer .social li a span i {
+    background-color: #323434;
     color: #ffffff;
-    width: 2rem;
-    height:2rem;
-    border-radius:50%;
-    margin-top: 60px;
-    font-size: 38px;
-    padding: 2%;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 12%;
     margin-right: 30px;
    
 }
-.footer .text{
-    color: #ffffff;
-    padding-top: 4px;
+.footer .pipo1 input[type="text"]{
+    background-color:#453a96;
+    border: none;
+    
+   
+
+   
+}
+.footer .pipo input[type="text"]{
+    background-color:rgba(255, 255, 255, 0.1);
+   border: none;
+}
+.footer .textt, .link a{
+    color: #808080;
+    font-weight: 500;
+   
 }
 .footer .text li a:hover{
     color: #fd5f00;
@@ -392,3 +433,90 @@ footer .social li a i{
 .footer{
     background-color: #212222;
 }
+.footer .text .meta.clr a{
+    color: #808080;
+    font-size: 14px;
+}
+
+@media(max-width: 768px) {
+    .subscribe-form input
+     {  width: 100%;  
+    }
+}
+@media (max-width: 991px) {
+  .footer .meta{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+@media only screen and (min-width: 991px) {
+    .contii {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .showof {
+      display: none;
+    }
+  }
+
+
+
+@media (max-width: 352px) {
+    .footer .text .meta.clr a{
+        color: #808080;
+        font-size: 12.4px;
+        
+    }
+  }
+  @media (max-width: 270px) {
+    .footer .text .meta.clr a{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .subscribe-form input{
+        width: 257px;
+         
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-slide .cent h1 p a{
+        text-align: center;
+        font-size: 10px;
+         
+    }
+    .nila{
+        display: none;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .dipa{
+        height: 500px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        font-size: 20px;
+        margin-right:20% ;
+        margin: auto;
+        display: flex;
+        padding: 10px;
+         
+    }
+    .dipa img{
+    
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        text-align: center;
+        margin-top: 10.5%;
+       
+    }
+  }
+  
+ 
